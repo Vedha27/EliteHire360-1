@@ -1,49 +1,8 @@
-# Ignore Visual Studio and VS Code settings
-.vs/
-.vscode/
+# Ignore Visual Studio workspace folder
+/.vs/
 
-# Ignore build folders
-EliteHire360/bin/
-EliteHire360/obj/
-Entities/bin/
-Entities/obj/
+# Ignore obj folders and cache files for EliteHire360 project
+/EliteHire360/obj/Debug/net9.0/*.cache
 
-# Ignore user-specific files
-*.user
-*.userosscache
-*.suo
-
-# Ignore build results
-[Dd]ebug/
-[Rr]elease/
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-[Bb]uild/
-
-# Ignore cache and temporary files
-*.cache
-*.log
-*.tmp
-*.pidb
-*.svclog
-*.scc
-
-# Ignore generated configuration files
-*.GeneratedMSBuildEditorConfig.editorconfig
-*.AssemblyInfo.cs
-
-# Ignore NuGet packages
-*.nupkg
-packages/
-*.snupkg
-
-# Ignore publish output
-publish/
-*.publish.xml
-*.publishproj
-
-# Ignore other unnecessary files
-_ReSharper*/
-*.DotSettings.user
+# Ignore obj folders and cache files for Entities project
+/Entities/obj/*.cache
