@@ -4,17 +4,21 @@ using System.Collections.Generic;
 
 namespace Entities.MetaModels
 {
+    [Table("status_category")]
     public class StatusCategory
     {
         [Key]
+        [Column("status_category_id")]
         public int Id { get; set; }
+
+        [Column("status_category_name")]
         [MaxLength(50)]
         public string StatusCategoryName { get; set; } = null!;
-        public int CreatedBy { get; set; }
-        public DateTime CreatedAt { get; set; }
 
-        // Navigation property: CreatedBy User
-        [ForeignKey("CreatedBy")]
-        public virtual User? CreatedByUser { get; set; }
+        [Column("created_by")]
+        public int CreatedBy { get; set; }
+
+        [Column("created_on")]
+        public DateTime CreatedAt { get; set; }
     }
 }
