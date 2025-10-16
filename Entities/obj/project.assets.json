@@ -1580,23 +1580,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vedha\\.nuget\\packages\\": {},
+    "C:\\Users\\Mathan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP.Net CORE WEB API\\EliteHire360\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Mathan\\projects\\EliteHire360-1\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "D:\\ASP.Net CORE WEB API\\EliteHire360\\Entities\\Entities.csproj",
-      "packagesPath": "C:\\Users\\vedha\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP.Net CORE WEB API\\EliteHire360\\Entities\\obj\\",
+      "projectPath": "C:\\Users\\Mathan\\projects\\EliteHire360-1\\Entities\\Entities.csproj",
+      "packagesPath": "C:\\Users\\Mathan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mathan\\projects\\EliteHire360-1\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vedha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
