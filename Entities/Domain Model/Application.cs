@@ -30,8 +30,16 @@ namespace Entities
         [Column("job_id")]
         public int JobId { get; set; }
 
-        [Column("screening")]
+        [NotMapped]
         public Screening? Screening { get; set; }
+
+        public string ? ScreeningJson
+        {
+            get => Screening == null ? null : JsonSerializer.Serialize(Screening);
+            set => Screening = string.IsNullOrWhiteSpace(value)
+                ? new Screening()
+                : JsonSerializer.Deserialize<Screening>(value);
+        }
 
         [Column("is_offer_sent")]
         public int? IsOfferSent { get; set; }
@@ -65,7 +73,6 @@ namespace Entities
         [Column("application_status_id")]
         public int ApplicationStatusId { get; set; }
 
-        [ForeignKey("User")]
         [Column("created_by")]
         public int CreatedBy { get; set; }
 
@@ -80,11 +87,9 @@ namespace Entities
 
         [Column("updated_by")]
         public int? UpdatedBy { get; set; }
-
         public virtual Candidate Candidate { get; set; } = null!;
         public virtual Job Job { get; set; } = null!;
         public virtual Status Status { get; set; } = null!;
-        public virtual User User { get; set; } = null!;
         public virtual ICollection<ApplicationHistory> ApplicationHistories { get; set; } = new List<ApplicationHistory>();
         public virtual ICollection<ScheduledInterview> ScheduledInterviews { get; set; } = new List<ScheduledInterview>();
     }

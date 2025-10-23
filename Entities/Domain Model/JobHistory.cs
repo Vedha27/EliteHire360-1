@@ -20,7 +20,6 @@ namespace Entities
         [Column("job_status_id")]
         public int JobStatusId { get; set; }
 
-        [ForeignKey("User")]
         [Column("created_by")]
         public int CreatedBy { get; set; }
 
