@@ -42,18 +42,19 @@ namespace Entities
         [Column("created_at")]
         public DateTime CreatedOn { get; set; }
 
-        [ForeignKey("User")]
         [Column("created_by")]
         public int CreatedBy { get; set; }
 
         [Column("updated_at")]
         public DateTime? UpdatedOn { get; set; }
 
-        [ForeignKey("User")]
+      
         [Column("updated_by")]
         public int? UpdatedBy { get; set; }
 
         [Column("deleted_at")]
         public DateTime? DeletedOn { get; set; }
+
+        public virtual User User { get; set; } = null!;
     }
 }

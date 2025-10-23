@@ -19,8 +19,7 @@ namespace Entities
         [ForeignKey("Status")]
         [Column("status_id")]
         public int InterviwStatusId { get; set; }
-
-        [ForeignKey("User")]
+       
         [Column("created_by")]
         public int CreatedBy { get; set; }
 
