@@ -1,3 +1,8 @@
-/.vs
+# Ignore Visual Studio workspace folder
+/.vs/
+
+# Ignore obj folders and cache files for EliteHire360 project
 /EliteHire360/obj/Debug/net9.0/*.cache
+
+# Ignore obj folders and cache files for Entities project
 /Entities/obj/*.cache

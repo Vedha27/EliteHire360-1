@@ -12,9 +12,5 @@ namespace Entities.MetaModels
         public string Reason { get; set; } = null!;
         public DateTime CreatedOn { get; set; }
         public int CreatedBy { get; set; }
-
-        // Navigation property: CreatedBy User
-        [ForeignKey("CreatedBy")]
-        public virtual User? CreatedByUser { get; set; }
     }
 }
