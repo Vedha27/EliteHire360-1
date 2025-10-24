@@ -77,7 +77,7 @@
 - **id** → `int` (PK)  
 - **uniqueKey** → `guid`  
 - **jobTitle** → `varchar(30)`  
-- **interviewProcess**  → `[]` `jsonb`
+- **interviewProcess**  → `jsonb`
 - **departmentId** → `int` (FK → Department.id)  
 - **locationId** → `int` (FK → OfficeLoc.id)  
 - **empType** → `int` (FK → EmploymentType.id)  
@@ -208,7 +208,7 @@
 - **startTime** → `datetime`
 - **duration** → `int`  
 - **status** → `varchar(40)`  
-- **feedBack** → ``  
+- **feedBack** → `varchar(40)`  
 - **location** → `varchar(55)`  
 - **createdAt** → `datetime`  
 - **updatedAt** → `datetime`  
@@ -647,22 +647,22 @@
 **Section:** `InterviewFeedback`
 
 - **PerformanceRating**
-  - **TechnicalSkills** → `int`
-  - **Communication** → `int`
-  - **ExperienceLevel** → `int`
-  - **CultutralFit** → `int`
-  - **OverallAssessment** → `int`
+  - **TechnicalSkills** → `""`  
+  - **Communication** → `""`  
+  - **ExperienceLevel** → `""`  
+  - **CulturalFit** → `""`  
+  - **OverallAssessment** → `""`  
 
 - **DetailedFeedback**
-  - **GeneralComments** → `string`
-  - **KeyStrengths** → `string`
-  - **AreasForImprovement** → `string`
-  - **AddtionalInterviewerNotes** → `string`
+  - **GeneralComments** → `[]`  
+  - **KeyStrengths** → `[]`  
+  - **AreasForImprovement** → `[]`  
+  - **AdditionalInterviewerNotes** → `[]`  
 
 - **Recommendation**
-  - **HiringRecommendation** → `string`
-  - **ReommendedNextSteps** → `string`
- 
+  - **HiringRecommendation** → `""`  
+  - **RecommendedNextSteps** → `[]`  
+
 ---
 # Screening Json 
 ---
@@ -675,8 +675,8 @@
 ---
 # InterviewProcess Json 
 ---
-
-   - **InterviewRounds**  →
+ - **InterviewProcess**  →
+      - **InterviewRounds**  →
          - **RoundTittle**:`""`,
          - **InterviewType**:`""`,
          - **Description**:`""`,
@@ -684,6 +684,7 @@
          - **Interviewvers**:`""`,
          - **Instructions**:`""`,
 ---
+
 
 ```mermaid
  Status Tree for EliteHire
@@ -733,8 +734,6 @@ Job Status
     OnHold --> Archived
     Review[Review (abnormal)] --> Active
     Review --> Rejected
-
-```
 
 
 
