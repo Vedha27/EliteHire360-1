@@ -2815,23 +2815,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vedha\\.nuget\\packages\\": {},
+    "C:\\Users\\nithyanandam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EliteHire\\EliteHireMainModule\\EliteHire360-1\\Entities\\Entities.csproj",
+      "projectUniqueName": "E:\\workspace2\\EliteHire360-1\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "D:\\EliteHire\\EliteHireMainModule\\EliteHire360-1\\Entities\\Entities.csproj",
-      "packagesPath": "C:\\Users\\vedha\\.nuget\\packages\\",
-      "outputPath": "D:\\EliteHire\\EliteHireMainModule\\EliteHire360-1\\Entities\\obj\\",
+      "projectPath": "E:\\workspace2\\EliteHire360-1\\Entities\\Entities.csproj",
+      "packagesPath": "C:\\Users\\nithyanandam\\.nuget\\packages\\",
+      "outputPath": "E:\\workspace2\\EliteHire360-1\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vedha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nithyanandam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2901,7 +2901,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
